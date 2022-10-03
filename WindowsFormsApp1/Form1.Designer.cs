@@ -35,6 +35,7 @@ namespace WindowsFormsApp1
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.txt_Status = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,11 +91,20 @@ namespace WindowsFormsApp1
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // txt_Status
+            // 
+            this.txt_Status.BackColor = System.Drawing.SystemColors.Menu;
+            this.txt_Status.Location = new System.Drawing.Point(0, 315);
+            this.txt_Status.Name = "txt_Status";
+            this.txt_Status.Size = new System.Drawing.Size(570, 20);
+            this.txt_Status.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 347);
+            this.Controls.Add(this.txt_Status);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
@@ -117,6 +127,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txt_Status;
     }
 }
 

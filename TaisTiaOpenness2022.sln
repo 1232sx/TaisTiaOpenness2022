@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{1F02EBE9-48A2-467E-BD05-F1E1AFC6AFE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaisTiaOpenness2022", "WindowsFormsApp1\TaisTiaOpenness2022.csproj", "{1F02EBE9-48A2-467E-BD05-F1E1AFC6AFE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
