@@ -30,6 +30,8 @@ namespace WindowsFormsApp1
             get; set;
         }
 
+          
+
         public PlcSoftware globalPlcSoftware;
        /// <summary>
        /// initializatiog component for the Form1 taken from TIA Openness example
@@ -114,13 +116,13 @@ namespace WindowsFormsApp1
         /// Enumerate all blocks in PLC software
         /// </summary>
         /// <param name="plcsoftware"></param>
-        private static void EnumeratePlcBlocks(PlcSoftware plcsoftware)
+        private void EnumeratePlcBlocks(PlcSoftware plcsoftware)
         //Enumerates all blocks
         {
             foreach (PlcBlock block in plcsoftware.BlockGroup.Blocks)
             {
-                string message = $"{plcsoftware.Name}||{block.Name}({block.GetType().Name}{block.Number})";
-                MessageBox.Show(message);
+               
+              
             }
         }
         #endregion
@@ -166,6 +168,10 @@ namespace WindowsFormsApp1
         {
             ConnectingTiaProject();
             GetListOfPlcBlocks();
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
