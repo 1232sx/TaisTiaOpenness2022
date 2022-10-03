@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
     {
         #region Variables for TIA Portal projects
         /// <summary>
-        /// variables to connect to Tia Portal
+        /// variables to connect to Tia Portal taken from TIA Openness example
         /// </summary>
         private static TiaPortalProcess _tiaProcess;
 
@@ -31,7 +31,9 @@ namespace WindowsFormsApp1
         }
 
         public PlcSoftware globalPlcSoftware;
-       
+       /// <summary>
+       /// initializatiog component for the Form1 taken from TIA Openness example
+       /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -41,7 +43,7 @@ namespace WindowsFormsApp1
         #endregion
         #region Assembly
         /// <summary>
-        /// I need to know what is this part for
+        /// I need to know what is this part for, takem from TIA Openness exapmle
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="args"></param>
@@ -78,6 +80,9 @@ namespace WindowsFormsApp1
         }
         #endregion
         #region Connection to the TIA Project
+        /// <summary>
+        /// Taken from TIA Openness example, but without radiobuttons
+        /// </summary>
         private void ConnectingTiaProject()
         {
             IList<TiaPortalProcess> processes = TiaPortal.GetProcesses();
@@ -105,6 +110,10 @@ namespace WindowsFormsApp1
         }
         #endregion
         #region Enumerate PLC Blocks
+        /// <summary>
+        /// Enumerate all blocks in PLC software
+        /// </summary>
+        /// <param name="plcsoftware"></param>
         private static void EnumeratePlcBlocks(PlcSoftware plcsoftware)
         //Enumerates all blocks
         {
@@ -116,6 +125,11 @@ namespace WindowsFormsApp1
         }
         #endregion
         #region GetPlcSoftware
+        /// <summary>
+        /// Get PLC Software from Device composition
+        /// </summary>
+        /// <param name="device"></param>
+        /// <returns></returns>
         private PlcSoftware GetPlcSoftware(Device device)
         {
             DeviceItemComposition deviceItemComposition = device.DeviceItems;
@@ -131,8 +145,11 @@ namespace WindowsFormsApp1
             }
             return null;
         }
-      
+        #endregion
         #region Get List of PLC Blocks
+        /// <summary>
+        /// get variables of PLC blocks without list
+        /// </summary>
         private void GetListOfPlcBlocks()
         {
             DeviceComposition deviceComposition = MyProject.Devices;
